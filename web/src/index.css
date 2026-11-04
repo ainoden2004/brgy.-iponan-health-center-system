@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #fcfeff 100%);
+  @apply dark:bg-gradient-to-br dark:from-slate-900 dark:via-[#1E1E2D] dark:to-[#2d2447] bg-fixed min-h-screen text-text-primary antialiased;
+}
+
+/* Custom scrollbar for a more premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400 transition-colors;
+}
